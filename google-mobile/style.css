@@ -1,0 +1,151 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin: 30px;
+  margin-top: 0;
+}
+main p {
+  text-align: justify;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: 1fr;
+ 
+}
+
+.display {
+  display: none;
+}
+ 
+.item {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 27, 27);
+
+
+}
+
+.item1 {
+  background-color: blue;
+  background-image: url(./foto/paukstis.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.4;
+}
+
+.item2 {
+  background-color: yellow;
+  background-image: url(./foto/zmones.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.item3 {
+  background-color: red;
+  background-image: url(./foto/paukstis.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.item4 {
+  background-color: green;
+  background-image: url(./foto/zmones.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.melina {
+  background-color: rgb(209, 209, 255);
+  text-align: center;
+  margin: 25px;
+}
+
+a {
+  font-size: 50px;
+  letter-spacing: 10px;
+  color: black;
+}
+
+form {
+  text-align: left;
+}
+
+#name {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: rgb(209, 209, 255);
+  width: 100%;
+}
+
+#email {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: rgb(209, 209, 255);
+  width: 100%;
+}
+
+#message {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: rgb(209, 209, 255);
+  width: 100%;
+}
+
+.padd {
+  padding: 10px;
+}
+
+#button {
+  background-color: rgb(134, 109, 62);
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+}
+
+@media only screen and (min-width: 768px ) {
+ .grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:repeat(4, 25%) ;
+  gap: 10px;
+  padding: 0%;
+}
+  .display {
+    display: grid;
+  }
+  .melina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #forma { 
+    grid-area: 1/1;
+  }
+  #button {
+    width: 20%;
+  }
+  #pora {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    display: block;
+  }
+  #imggoogle {
+    width: 100px;
+    padding: 20px;
+  }
+
+}
